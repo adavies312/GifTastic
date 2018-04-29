@@ -1,24 +1,19 @@
 $(document).ready(function () {
 
-    var topics = ["squirrels", "dogs", "cats", "seals", "bears", "sloths", "owls"];
-
-
-
-
-
-
+    var topics = ["Batman", "Superman", "Green Lantern","Wonder Woman", "Aquaman", "Swamp Thing", "Catwoman"];
 
     var API_KEY = "kOF7wM4ji1Ee6gr2SWQ5HjLi0oh22CkE";
     var requestUrl = "https://api.giphy.com/v1/gifs/search?api_key=" + API_KEY + "&limit=10&q=";
 
-
+function makeButtons () {
+    $("#buttons").empty();
     for (var i = 0; i < topics.length; i++) {
         var button = $("<button>");
-        button.addClass("btn btn-info topic");
+        button.addClass("btn btn-info topic btn-lg");
         button.text(topics[i]);
         $("#buttons").append(button);
     }
-
+};
     function createImageDiv(response, i) {
         var img = $("<img class='giphy-img'>");
         // set the src of the element
@@ -72,11 +67,9 @@ $(document).ready(function () {
         var search = $("#search").val().trim();
         topics.push(search);
         $("#new-topic")[0].reset();
-        var button = $("<button>");
-        button.addClass("btn btn-info topic");
-        button.text(topics[i]);
-        $("#buttons").append(button);
+        makeButtons();
         return false; 
 
     })
+    makeButtons();
 });

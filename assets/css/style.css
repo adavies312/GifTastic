@@ -16,3 +16,14 @@ button {
     margin-right: 10px; 
     margin-bottom: 5px; 
 }
+
+.jumbotron {
+    font-size: 48px;
+    text-align: center;
+    background-image: url("../images/dc-comics-banner.jpg");
+    color: red!important;
+    text-shadow: 2px 2px black;
+}
+
+body {
+}
