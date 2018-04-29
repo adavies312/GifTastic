@@ -1,0 +1,18 @@
+.card {
+    align-self: auto;
+    float: right;
+}
+
+.gif-card {
+    width: 400px; 
+    float: left; 
+}
+
+img {
+    width: 350px; 
+}
+
+button {
+    margin-right: 10px; 
+    margin-bottom: 5px; 
+}
