@@ -10,6 +10,7 @@
 
 img {
     width: 350px; 
+    max-height: 450px;
 }
 
 button {
@@ -20,10 +21,7 @@ button {
 .jumbotron {
     font-size: 48px;
     text-align: center;
-    background-image: url("../images/dc-comics-banner.jpg");
+    background-image: url("../images/superhero-banner.jpg");
     color: red!important;
     text-shadow: 2px 2px black;
-}
-
-body {
 }
