@@ -2,6 +2,7 @@
 
 ## Built With
 * AJAX
+* API
 * jQuery
 * JavaScript
 * HTML
