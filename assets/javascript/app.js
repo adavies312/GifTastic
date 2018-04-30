@@ -17,10 +17,10 @@ function makeButtons () {
     function createImageDiv(response, i) {
         var img = $("<img class='giphy-img'>");
         // set the src of the element
-        img.attr("src", response.data[i].images.downsized.url);
+        img.attr("src", response.data[i].images.downsized_still.url);
         img.attr("data-animated", response.data[i].images.downsized.url);
         img.attr("data-still", response.data[i].images.downsized_still.url);
-        img.attr("data-state", "animated");
+        img.attr("data-state", "still");
 
         var gifCard = $("<div class = 'gif-card'>");
         var pRating = $("<p>");
@@ -46,6 +46,7 @@ function makeButtons () {
         });
     });
 
+    
     $(document).on("click", ".giphy-img", function () {
         var state = $(this).attr("data-state");
         //if the data state is animated
@@ -62,6 +63,7 @@ function makeButtons () {
             $(this).attr("src", $(this).attr("data-animated"))
         }
     })
+
 
     $("#newGif").on("click", function(){
         var search = $("#search").val().trim();
