@@ -59,7 +59,7 @@ function makeButtons () {
         } else {
             // else change the state to animated
             $(this).attr("data-state", "animated");
-            //change the src to stil version
+            //change the src to animated version
             $(this).attr("src", $(this).attr("data-animated"))
         }
     })
